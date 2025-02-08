@@ -1,0 +1,22 @@
+[package]
+name = "fast-command"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mark Tyrkba <marktyrkba456@gmail.com>"]
+description = "Simple implementation of `Command` to avoid fork + exec overhead."
+repository = "https://github.com/rakivo/fast-command"
+license = "MIT"
+readme = "README.md"
+keywords = ["command", "shell", "execution", "performance"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+libc = "=0.2.169"
+
+[lib]
+name = "fast_command"
+path = "command.rs"
+
+[[example]]
+name = "simple_example"
+path = "examples/example.rs"
