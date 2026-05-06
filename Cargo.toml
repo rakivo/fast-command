@@ -11,7 +11,7 @@ keywords = ["command", "shell", "execution", "performance"]
 categories = ["command-line-utilities", "development-tools"]
 
 [dependencies]
-libc = "=0.2.169"
+libc = "0.2.169"
 
 [lib]
 name = "fast_command"
